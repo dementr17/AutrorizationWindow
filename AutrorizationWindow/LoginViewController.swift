@@ -87,7 +87,7 @@ extension LoginViewController {
         }
     }
     
-    func backgroundColor() {
+        func backgroundColor() {
                 let gradientLayer = CAGradientLayer()
                 gradientLayer.frame = view.bounds
         gradientLayer.colors = [#colorLiteral(red: 0, green: 0.5725490196, blue: 0.2705882353, alpha: 1).cgColor, UIColor(red: 252/255, green: 238/255, blue: 33/255, alpha: 1).cgColor]

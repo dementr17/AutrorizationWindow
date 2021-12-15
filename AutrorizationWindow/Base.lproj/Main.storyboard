@@ -123,7 +123,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gMc-Ag-qxl"/>
-                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="gMc-Ag-qxl" firstAttribute="bottom" secondItem="Jei-wi-DKt" secondAttribute="bottom" constant="100" id="3ct-Tm-QDW"/>
                             <constraint firstItem="XaD-ZF-SKy" firstAttribute="leading" secondItem="gMc-Ag-qxl" secondAttribute="leading" constant="20" id="PUR-Cr-OLG"/>
@@ -144,8 +144,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
