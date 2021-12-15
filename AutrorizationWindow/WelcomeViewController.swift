@@ -3,10 +3,10 @@ import Foundation
 import UIKit
 
 class WelcomeViewController: UIViewController {
-    
-var textWelcome: String!
 
     @IBOutlet weak var welcomeLabel: UILabel!
+    
+    var textWelcome: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
