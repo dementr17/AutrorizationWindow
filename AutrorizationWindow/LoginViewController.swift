@@ -51,7 +51,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func loginShow() {
-        showAlert(title: "Login", message: "Dmitriy")
+        showAlert(title: "Login", message: "Dmitry")
     }
     @IBAction func passwordShow() {
         showAlert(title: "Password", message: "password")

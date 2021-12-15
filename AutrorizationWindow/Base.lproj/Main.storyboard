@@ -99,19 +99,19 @@
         <!--Welcome View Controller-->
         <scene sceneID="op3-PV-8rS">
             <objects>
-                <viewController id="haU-0S-SSB" customClass="WelcomeViewController" customModule="AutrorizationWindow" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="haU-0S-SSB" customClass="WelcomeViewController" customModule="AutrorizationWindow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uy6-nL-cIV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome User!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaD-ZF-SKy">
-                                <rect key="frame" x="20" y="60" width="374" height="48"/>
+                                <rect key="frame" x="20" y="104" width="374" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jei-wi-DKt">
-                                <rect key="frame" x="143.5" y="658" width="127.5" height="50"/>
+                                <rect key="frame" x="143.5" y="712" width="127.5" height="50"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log Out">
@@ -121,14 +121,23 @@
                                     <segue destination="80S-cG-Iqp" kind="unwind" unwindAction="unwindFor:" id="W2A-Vs-qOE"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hi" translatesAutoresizingMaskIntoConstraints="NO" id="O5c-N6-uAu">
+                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="CQ3-AY-BcO"/>
+                                    <constraint firstAttribute="height" constant="128" id="XBc-Nr-Fhp"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gMc-Ag-qxl"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="gMc-Ag-qxl" firstAttribute="bottom" secondItem="Jei-wi-DKt" secondAttribute="bottom" constant="100" id="3ct-Tm-QDW"/>
                             <constraint firstItem="XaD-ZF-SKy" firstAttribute="leading" secondItem="gMc-Ag-qxl" secondAttribute="leading" constant="20" id="PUR-Cr-OLG"/>
+                            <constraint firstItem="O5c-N6-uAu" firstAttribute="centerY" secondItem="Uy6-nL-cIV" secondAttribute="centerY" id="Xrc-hX-Z9t"/>
                             <constraint firstItem="Jei-wi-DKt" firstAttribute="centerX" secondItem="Uy6-nL-cIV" secondAttribute="centerX" id="ofh-46-hoF"/>
                             <constraint firstItem="XaD-ZF-SKy" firstAttribute="top" secondItem="gMc-Ag-qxl" secondAttribute="top" constant="60" id="qVJ-hz-1b6"/>
+                            <constraint firstItem="O5c-N6-uAu" firstAttribute="centerX" secondItem="Uy6-nL-cIV" secondAttribute="centerX" id="rks-7r-RTb"/>
                             <constraint firstItem="gMc-Ag-qxl" firstAttribute="trailing" secondItem="XaD-ZF-SKy" secondAttribute="trailing" constant="20" id="tdq-NK-tyc"/>
                         </constraints>
                     </view>
@@ -144,6 +153,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="hi" width="920" height="763"/>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

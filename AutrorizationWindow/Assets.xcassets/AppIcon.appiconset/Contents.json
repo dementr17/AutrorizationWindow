@@ -1,21 +1,25 @@
 {
   "images" : [
     {
+      "filename" : "aw 40_40.jpeg",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
+      "filename" : "aw 60_60.jpeg",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
+      "filename" : "aw 58_58.jpeg",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
+      "filename" : "aw 87_87.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
