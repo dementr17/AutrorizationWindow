@@ -234,8 +234,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="infoLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPj-FI-9BI">
-                                <rect key="frame" x="172" y="438" width="70" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="infoLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPj-FI-9BI">
+                                <rect key="frame" x="20" y="438" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -244,16 +244,36 @@
                         <viewLayoutGuide key="safeArea" id="thv-im-r3R"/>
                         <color key="backgroundColor" red="1" green="0.70104208366649368" blue="0.72093884136588637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="thv-im-r3R" firstAttribute="trailing" secondItem="DPj-FI-9BI" secondAttribute="trailing" constant="20" id="0uc-HU-NcW"/>
+                            <constraint firstItem="DPj-FI-9BI" firstAttribute="leading" secondItem="thv-im-r3R" secondAttribute="leading" constant="20" id="3j8-Aa-eS6"/>
                             <constraint firstItem="DPj-FI-9BI" firstAttribute="centerX" secondItem="p01-V9-bpm" secondAttribute="centerX" id="7nH-zn-qtQ"/>
                             <constraint firstItem="DPj-FI-9BI" firstAttribute="centerY" secondItem="p01-V9-bpm" secondAttribute="centerY" id="H7g-6m-PQf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="RF7-yq-KTr"/>
+                    <navigationItem key="navigationItem" id="RF7-yq-KTr">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="T2r-H8-Agj">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="6LP-JK-KBo">
+                                <rect key="frame" x="20" y="5" width="92" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                                <connections>
+                                    <segue destination="8QJ-Li-JJw" kind="unwind" unwindAction="unwindFor:" id="AFb-uq-EbW"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <segue destination="8QJ-Li-JJw" kind="unwind" unwindAction="unwindFor:" id="0wU-EV-2Kf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="backButton" destination="T2r-H8-Agj" id="OID-Zs-w2I"/>
                         <outlet property="infoLabel" destination="DPj-FI-9BI" id="uOy-9C-PnN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdP-Rm-unP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="8QJ-Li-JJw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4213" y="899"/>
         </scene>
@@ -282,6 +302,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="1ht-nS-HgT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EX0-Up-KEa">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

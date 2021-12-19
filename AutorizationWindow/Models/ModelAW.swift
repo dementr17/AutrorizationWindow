@@ -11,7 +11,7 @@ struct User {
                             surName: "Chepanov",
                             age: 28,
                             city: "Tambov",
-                            interests: "")
+                            interests: "active pastime, motorcycle, TV series and movies")
             )
     }
 }

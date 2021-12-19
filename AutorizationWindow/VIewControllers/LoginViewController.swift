@@ -24,9 +24,10 @@ class LoginViewController: UIViewController{
                 welcomeVC.textWelcome = "\(user.person.name) \(user.person.surName)"
             } else if let personVC = viewController as? PersonViewController {
                 personVC.nameTitle = "\(user.person.name) \(user.person.surName)"
-                guard let navigationVC = segue.destination as? UINavigationController else { return }
-                guard let infoVC = segue.destination as? InfoViewController else { return }
-                infoVC.textInfo = user.person
+                if let navigationVC = segue.destination as? UINavigationController {
+                    guard let infoVC = segue.destination as? InfoViewController else { return }
+                    infoVC.personInfo = user
+                }
             }
     }
     }
@@ -78,5 +79,4 @@ extension LoginViewController: UITextFieldDelegate {
         alert.addAction(okAction)
         present(alert, animated: true)
     }
-    
 }
