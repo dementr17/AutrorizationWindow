@@ -22,23 +22,12 @@
                                 <color key="textColor" red="0.89411771297454834" green="0.30490195751190186" blue="0.054901964962482452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hello" translatesAutoresizingMaskIntoConstraints="NO" id="EgN-xI-V9P">
-                                <rect key="frame" x="87" y="133" width="240" height="140"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="140" id="8dL-o8-xpc"/>
-                                    <constraint firstAttribute="width" constant="240" id="Bb7-80-OdE"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <color key="backgroundColor" red="0.84917253921206692" green="0.94727190747764878" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="EgN-xI-V9P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="89" id="NAr-UV-CgH"/>
                             <constraint firstItem="T0x-kP-mGA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="a6y-J8-kbF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EgN-xI-V9P" secondAttribute="trailing" constant="87" id="eQm-3f-zvx"/>
-                            <constraint firstItem="EgN-xI-V9P" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mh9-r0-amZ"/>
-                            <constraint firstItem="EgN-xI-V9P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="vD3-rO-LQi"/>
                             <constraint firstItem="T0x-kP-mGA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="zgo-aT-BGG"/>
                         </constraints>
                     </view>
@@ -49,10 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="hello" width="1920" height="1251"/>
-        <systemColor name="secondarySystemGroupedBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FD1C81B276F3112009A091B /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD1C81A276F3112009A091B /* InfoViewController.swift */; };
+		5FD1C81D276F5191009A091B /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD1C81C276F5191009A091B /* PersonViewController.swift */; };
 		5FF28E542768A28900AA673C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF28E532768A28900AA673C /* AppDelegate.swift */; };
 		5FF28E562768A28900AA673C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF28E552768A28900AA673C /* SceneDelegate.swift */; };
 		5FF28E5B2768A28900AA673C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF28E592768A28900AA673C /* Main.storyboard */; };
@@ -14,10 +16,13 @@
 		5FF28E602768A28E00AA673C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF28E5E2768A28E00AA673C /* LaunchScreen.storyboard */; };
 		5FF28E6A2768B80300AA673C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF28E692768B80300AA673C /* LoginViewController.swift */; };
 		5FF28E6D2768B83500AA673C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF28E6C2768B83500AA673C /* WelcomeViewController.swift */; };
+		5FF28E74276C564D00AA673C /* ModelAW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF28E73276C564D00AA673C /* ModelAW.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5FF28E502768A28900AA673C /* AutrorizationWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutrorizationWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FD1C81A276F3112009A091B /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		5FD1C81C276F5191009A091B /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		5FF28E502768A28900AA673C /* AutorizationWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutorizationWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF28E532768A28900AA673C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FF28E552768A28900AA673C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5FF28E5A2768A28900AA673C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		5FF28E612768A28E00AA673C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FF28E692768B80300AA673C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5FF28E6C2768B83500AA673C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		5FF28E73276C564D00AA673C /* ModelAW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelAW.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +48,7 @@
 		5FF28E472768A28900AA673C = {
 			isa = PBXGroup;
 			children = (
-				5FF28E522768A28900AA673C /* AutrorizationWindow */,
+				5FF28E522768A28900AA673C /* AutorizationWindow */,
 				5FF28E512768A28900AA673C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,32 +56,75 @@
 		5FF28E512768A28900AA673C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5FF28E502768A28900AA673C /* AutrorizationWindow.app */,
+				5FF28E502768A28900AA673C /* AutorizationWindow.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5FF28E522768A28900AA673C /* AutrorizationWindow */ = {
+		5FF28E522768A28900AA673C /* AutorizationWindow */ = {
 			isa = PBXGroup;
 			children = (
-				5FF28E532768A28900AA673C /* AppDelegate.swift */,
-				5FF28E552768A28900AA673C /* SceneDelegate.swift */,
+				5FF28E72276C562A00AA673C /* Models */,
+				5FF28E6E276C558000AA673C /* VIewControllers */,
+				5FF28E70276C55E900AA673C /* MediaFiles */,
+				5FF28E6F276C55BB00AA673C /* Storyboards */,
+				5FF28E71276C560100AA673C /* SupportFIles */,
+			);
+			path = AutorizationWindow;
+			sourceTree = "<group>";
+		};
+		5FF28E6E276C558000AA673C /* VIewControllers */ = {
+			isa = PBXGroup;
+			children = (
 				5FF28E692768B80300AA673C /* LoginViewController.swift */,
 				5FF28E6C2768B83500AA673C /* WelcomeViewController.swift */,
-				5FF28E592768A28900AA673C /* Main.storyboard */,
-				5FF28E5C2768A28E00AA673C /* Assets.xcassets */,
-				5FF28E5E2768A28E00AA673C /* LaunchScreen.storyboard */,
-				5FF28E612768A28E00AA673C /* Info.plist */,
+				5FD1C81C276F5191009A091B /* PersonViewController.swift */,
+				5FD1C81A276F3112009A091B /* InfoViewController.swift */,
 			);
-			path = AutrorizationWindow;
+			path = VIewControllers;
+			sourceTree = "<group>";
+		};
+		5FF28E6F276C55BB00AA673C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5FF28E5E2768A28E00AA673C /* LaunchScreen.storyboard */,
+				5FF28E592768A28900AA673C /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5FF28E70276C55E900AA673C /* MediaFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5FF28E5C2768A28E00AA673C /* Assets.xcassets */,
+			);
+			path = MediaFiles;
+			sourceTree = "<group>";
+		};
+		5FF28E71276C560100AA673C /* SupportFIles */ = {
+			isa = PBXGroup;
+			children = (
+				5FF28E612768A28E00AA673C /* Info.plist */,
+				5FF28E532768A28900AA673C /* AppDelegate.swift */,
+				5FF28E552768A28900AA673C /* SceneDelegate.swift */,
+			);
+			path = SupportFIles;
+			sourceTree = "<group>";
+		};
+		5FF28E72276C562A00AA673C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5FF28E73276C564D00AA673C /* ModelAW.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5FF28E4F2768A28900AA673C /* AutrorizationWindow */ = {
+		5FF28E4F2768A28900AA673C /* AutorizationWindow */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5FF28E642768A28E00AA673C /* Build configuration list for PBXNativeTarget "AutrorizationWindow" */;
+			buildConfigurationList = 5FF28E642768A28E00AA673C /* Build configuration list for PBXNativeTarget "AutorizationWindow" */;
 			buildPhases = (
 				5FF28E4C2768A28900AA673C /* Sources */,
 				5FF28E4D2768A28900AA673C /* Frameworks */,
@@ -85,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = AutrorizationWindow;
+			name = AutorizationWindow;
 			productName = AutrorizationWindow;
-			productReference = 5FF28E502768A28900AA673C /* AutrorizationWindow.app */;
+			productReference = 5FF28E502768A28900AA673C /* AutorizationWindow.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +154,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5FF28E4B2768A28900AA673C /* Build configuration list for PBXProject "AutrorizationWindow" */;
+			buildConfigurationList = 5FF28E4B2768A28900AA673C /* Build configuration list for PBXProject "AutorizationWindow" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +167,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5FF28E4F2768A28900AA673C /* AutrorizationWindow */,
+				5FF28E4F2768A28900AA673C /* AutorizationWindow */,
 			);
 		};
 /* End PBXProject section */
@@ -142,9 +191,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FF28E6A2768B80300AA673C /* LoginViewController.swift in Sources */,
+				5FF28E74276C564D00AA673C /* ModelAW.swift in Sources */,
 				5FF28E6D2768B83500AA673C /* WelcomeViewController.swift in Sources */,
 				5FF28E542768A28900AA673C /* AppDelegate.swift in Sources */,
+				5FD1C81B276F3112009A091B /* InfoViewController.swift in Sources */,
 				5FF28E562768A28900AA673C /* SceneDelegate.swift in Sources */,
+				5FD1C81D276F5191009A091B /* PersonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +273,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AutorizationWindow/SupportFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -276,6 +330,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AutorizationWindow/SupportFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -295,7 +351,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8JUQRQTM2T;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AutrorizationWindow/Info.plist;
+				INFOPLIST_FILE = AutorizationWindow/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,7 +379,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8JUQRQTM2T;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AutrorizationWindow/Info.plist;
+				INFOPLIST_FILE = AutorizationWindow/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -345,7 +401,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5FF28E4B2768A28900AA673C /* Build configuration list for PBXProject "AutrorizationWindow" */ = {
+		5FF28E4B2768A28900AA673C /* Build configuration list for PBXProject "AutorizationWindow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5FF28E622768A28E00AA673C /* Debug */,
@@ -354,7 +410,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5FF28E642768A28E00AA673C /* Build configuration list for PBXNativeTarget "AutrorizationWindow" */ = {
+		5FF28E642768A28E00AA673C /* Build configuration list for PBXNativeTarget "AutorizationWindow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5FF28E652768A28E00AA673C /* Debug */,
